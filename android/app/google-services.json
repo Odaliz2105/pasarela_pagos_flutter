@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "344580591459",
+    "project_id": "pasarela-pag",
+    "storage_bucket": "pasarela-pag.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344580591459:android:b7def90af2fccfa88e0d56",
+        "android_client_info": {
+          "package_name": "com.example.flutter_pasarela_pago"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJMxdgq-RZNTYJu-0YGk-Dp5qmEiapetw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
