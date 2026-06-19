@@ -14,7 +14,7 @@ class ResultadoPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Resultado'),
+        title: const Text('Resultado del Pago'),
       ),
       body: Center(
         child: Column(
@@ -29,12 +29,28 @@ class ResultadoPage extends StatelessWidget {
                   ? Colors.green
                   : Colors.red,
             ),
+
             const SizedBox(height: 20),
+
             Text(
               estado,
               style: const TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            const SizedBox(height: 20),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.popUntil(
+                  context,
+                  (route) => route.isFirst,
+                );
+              },
+              child: const Text(
+                'Volver al inicio',
               ),
             ),
           ],

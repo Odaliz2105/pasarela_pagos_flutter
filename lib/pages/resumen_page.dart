@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_pasarela_pago/models/pago.dart';
+
 import '../models/producto.dart';
+import 'pago_page.dart';
 
 class ResumenPage extends StatelessWidget {
   final Producto producto;
@@ -22,37 +23,31 @@ class ResumenPage extends StatelessWidget {
           children: [
             Text(
               producto.nombre,
-              style: const TextStyle(
-                fontSize: 24,
-              ),
+              style: const TextStyle(fontSize: 24),
             ),
 
             const SizedBox(height: 20),
 
             Text(
               'Total: \$${producto.precio}',
-              style: const TextStyle(
-                fontSize: 20,
-              ),
+              style: const TextStyle(fontSize: 20),
             ),
 
             const SizedBox(height: 30),
 
             ElevatedButton(
-  onPressed: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (_) => PagoPage(
-          producto: producto,
-        ),
-      ),
-    );
-  },
-  child: const Text(
-    'Continuar al Pago',
-  ),
-),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => PagoPage(
+                      producto: producto,
+                    ),
+                  ),
+                );
+              },
+              child: const Text('Continuar al Pago'),
+            ),
           ],
         ),
       ),

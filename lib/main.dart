@@ -21,7 +21,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Pasarela de Pago',
+
+      // 🎨 AQUÍ VA EL DISEÑO GLOBAL
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.deepPurple,
+        ),
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          backgroundColor: Colors.deepPurple,
+          foregroundColor: Colors.white,
+        ),
+      ),
+
       home: const ProductosPage(),
     );
   }
