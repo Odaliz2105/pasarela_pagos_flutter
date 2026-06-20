@@ -153,10 +153,29 @@ Se muestra al usuario el estado final de la transacción.
 
 ### HISTORIAL DE PAGOS
 
+Muestra todas las transacciones registradas en Firebase.
+
+### Información mostrada
+
+* Producto
+* Monto
+* Estado
+* Fecha
+* Últimos 4 dígitos
+
 <img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/a2f40749-cc59-4fa0-a250-7f400bc90550" />
 
 
 ### DASHBOARD
+Panel de estadísticas generales.
+
+### Indicadores
+
+* Total de pagos
+* Pagos aprobados
+* Pagos rechazados
+* Ventas simuladas
+
 
 <img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/62187da2-b56b-4a2b-aead-5efa744ad0fa" />
 
@@ -193,56 +212,7 @@ Cada transacción simulada se almacena automáticamente en Firestore.
 
 ### Captura Firestore
 
-📸 Agregar captura aquí
-
-```text
-assets/screenshots/firebase.png
-```
-
----
-
-# 📜 Historial de Pagos
-
-Muestra todas las transacciones registradas en Firebase.
-
-### Información mostrada
-
-* Producto
-* Monto
-* Estado
-* Fecha
-* Últimos 4 dígitos
-
-### Captura
-
-📸 Agregar captura aquí
-
-```text
-assets/screenshots/historial.png
-```
-
----
-
-# 📊 Dashboard
-
-Panel de estadísticas generales.
-
-### Indicadores
-
-* Total de pagos
-* Pagos aprobados
-* Pagos rechazados
-* Ventas simuladas
-
-### Captura
-
-📸 Agregar captura aquí
-
-```text
-assets/screenshots/dashboard.png
-```
-
----
+<img width="1588" height="734" alt="image" src="https://github.com/user-attachments/assets/11f42ad4-20af-4892-8b4d-6fd84f1e0eac" />
 
 # 🔒 Seguridad Implementada
 
