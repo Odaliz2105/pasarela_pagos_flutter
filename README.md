@@ -2,6 +2,7 @@
 
 Aplicación móvil desarrollada en **Flutter + Firebase Firestore** que simula el proceso de compra de productos mediante una pasarela de pago. La aplicación valida los datos ingresados por el usuario, genera un resultado aleatorio de aprobación o rechazo y registra cada transacción en Firebase.
 
+Link APK. -https://drive.google.com/file/d/11z_4YHeZSXPYyLxn8s_Cz_peSO4xDAj3/view?usp=sharing
 ---
 
 ## 📱 Descripción
