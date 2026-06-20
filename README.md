@@ -1,28 +1,40 @@
-mediante una pasarela de pago. La aplicación valida los datos ingresados por el usuario, genera un resultado aleatorio de aprobación o rechazo y registra cada transacción en Firebase.
+# 💳 Pasarela de Pago Simulada
 
-📱 Descripción
+Aplicación móvil desarrollada en **Flutter + Firebase Firestore** que simula el proceso de compra de productos mediante una pasarela de pago. La aplicación valida los datos ingresados por el usuario, genera un resultado aleatorio de aprobación o rechazo y registra cada transacción en Firebase.
 
-Este proyecto fue desarrollado como parte del taller de Simulación de Pasarela de Pago en Flutter.
+---
+
+## 📱 Descripción
+
+Este proyecto fue desarrollado como parte del taller de **Simulación de Pasarela de Pago en Flutter**.
 
 La aplicación permite:
 
-Visualizar productos disponibles.
-Consultar el resumen de compra.
-Ingresar datos de pago simulados.
-Validar la información ingresada.
-Simular pagos aprobados o rechazados.
-Registrar transacciones en Firebase Firestore.
-Consultar historial de pagos realizados.
+* Visualizar productos disponibles.
+* Consultar el resumen de compra.
+* Ingresar datos de pago simulados.
+* Validar la información ingresada.
+* Simular pagos aprobados o rechazados.
+* Registrar transacciones en Firebase Firestore.
+* Consultar historial de pagos realizados.
 
-⚠️ Importante: No se almacenan números completos de tarjeta ni códigos CVV. Únicamente se guardan los últimos 4 dígitos por motivos de seguridad.
+> ⚠️ Importante: No se almacenan números completos de tarjeta ni códigos CVV. Únicamente se guardan los últimos 4 dígitos por motivos de seguridad.
 
-🚀 Tecnologías Utilizadas
-Flutter
-Dart
-Firebase Core
-Cloud Firestore
-Material Design 3
-📂 Estructura del Proyecto
+---
+
+# 🚀 Tecnologías Utilizadas
+
+* Flutter
+* Dart
+* Firebase Core
+* Cloud Firestore
+* Material Design 3
+
+---
+
+# 📂 Estructura del Proyecto
+
+```text
 lib/
 │
 ├── data/
@@ -46,38 +58,56 @@ lib/
 ├── firebase_options.dart
 │
 └── main.dart
-⚙️ Funcionalidades Implementadas
-🛒 Catálogo de Productos
+```
+
+---
+
+# ⚙️ Funcionalidades Implementadas
+
+## 🛒 Catálogo de Productos
 
 La aplicación presenta una lista de productos disponibles para compra.
 
-Características
-Visualización de nombre y precio.
-Navegación al resumen de compra.
-Diseño moderno con Material Design.
-Captura
+### Características
+
+* Visualización de nombre y precio.
+* Navegación al resumen de compra.
+* Diseño moderno con Material Design.
+
+### Captura
 
 📸 Agregar captura aquí
 
+```text
 assets/screenshots/productos.png
-📋 Resumen de Compra
+```
+
+---
+
+## 📋 Resumen de Compra
 
 Permite visualizar el producto seleccionado y el valor total a pagar antes de continuar al proceso de pago.
 
-Captura
+### Captura
 
 📸 Agregar captura aquí
 
+```text
 assets/screenshots/resumen.png
-💳 Formulario de Pago
+```
+
+---
+
+## 💳 Formulario de Pago
 
 El usuario debe completar los siguientes datos:
 
-Nombre del titular
-Número de tarjeta
-Fecha de expiración
-CVV
-Validaciones
+* Nombre del titular
+* Número de tarjeta
+* Fecha de expiración
+* CVV
+
+### Validaciones
 
 ✔ Titular obligatorio
 
@@ -91,56 +121,84 @@ Validaciones
 
 ✔ CVV de 3 dígitos
 
-Captura
+### Captura
 
 📸 Agregar captura aquí
 
+```text
 assets/screenshots/pago.png
-🔄 Simulación de Pago
+```
+
+---
+
+## 🔄 Simulación de Pago
 
 La aplicación genera aleatoriamente un resultado:
 
-APROBADO
-RECHAZADO
+* APROBADO
+* RECHAZADO
 
 Utilizando:
 
+```dart
 Random().nextBool()
-Captura
+```
+
+### Captura
 
 📸 Agregar captura aquí
 
+```text
 assets/screenshots/procesando.png
-✅ Resultado del Pago
+```
+
+---
+
+## ✅ Resultado del Pago
 
 Se muestra al usuario el estado final de la transacción.
 
-Estados
-Pago Aprobado
-Pago Rechazado
-Captura Aprobado
+### Estados
+
+* Pago Aprobado
+* Pago Rechazado
+
+### Captura Aprobado
 
 📸 Agregar captura aquí
 
+```text
 assets/screenshots/aprobado.png
-Captura Rechazado
+```
+
+### Captura Rechazado
 
 📸 Agregar captura aquí
 
+```text
 assets/screenshots/rechazado.png
-🔥 Integración con Firebase Firestore
+```
+
+---
+
+## 🔥 Integración con Firebase Firestore
 
 Cada transacción simulada se almacena automáticamente en Firestore.
 
-Datos Guardados
-Campo	Descripción
-producto	Nombre del producto
-total	Valor total
-titular	Nombre del titular
-ultimos4	Últimos 4 dígitos de la tarjeta
-estado	APROBADO o RECHAZADO
-fecha	Fecha y hora del registro
-Ejemplo de Registro
+### Datos Guardados
+
+| Campo    | Descripción                     |
+| -------- | ------------------------------- |
+| producto | Nombre del producto             |
+| total    | Valor total                     |
+| titular  | Nombre del titular              |
+| ultimos4 | Últimos 4 dígitos de la tarjeta |
+| estado   | APROBADO o RECHAZADO            |
+| fecha    | Fecha y hora del registro       |
+
+### Ejemplo de Registro
+
+```json
 {
   "producto": "Teclado Mecánico",
   "total": 45,
@@ -149,41 +207,62 @@ Ejemplo de Registro
   "estado": "APROBADO",
   "fecha": "2026-06-19"
 }
-Captura Firestore
+```
+
+### Captura Firestore
 
 📸 Agregar captura aquí
 
+```text
 assets/screenshots/firebase.png
-📜 Historial de Pagos
+```
+
+---
+
+# 📜 Historial de Pagos
 
 Muestra todas las transacciones registradas en Firebase.
 
-Información mostrada
-Producto
-Monto
-Estado
-Fecha
-Últimos 4 dígitos
-Captura
+### Información mostrada
+
+* Producto
+* Monto
+* Estado
+* Fecha
+* Últimos 4 dígitos
+
+### Captura
 
 📸 Agregar captura aquí
 
+```text
 assets/screenshots/historial.png
-📊 Dashboard
+```
+
+---
+
+# 📊 Dashboard
 
 Panel de estadísticas generales.
 
-Indicadores
-Total de pagos
-Pagos aprobados
-Pagos rechazados
-Ventas simuladas
-Captura
+### Indicadores
+
+* Total de pagos
+* Pagos aprobados
+* Pagos rechazados
+* Ventas simuladas
+
+### Captura
 
 📸 Agregar captura aquí
 
+```text
 assets/screenshots/dashboard.png
-🔒 Seguridad Implementada
+```
+
+---
+
+# 🔒 Seguridad Implementada
 
 Para cumplir con buenas prácticas de desarrollo:
 
@@ -195,28 +274,53 @@ Para cumplir con buenas prácticas de desarrollo:
 
 ✅ Los registros se almacenan en Firebase Firestore.
 
-▶️ Ejecución del Proyecto
-Instalar dependencias
+---
+
+# ▶️ Ejecución del Proyecto
+
+## Instalar dependencias
+
+```bash
 flutter pub get
-Ejecutar proyecto
+```
+
+## Ejecutar proyecto
+
+```bash
 flutter run
-Generar APK
+```
+
+## Generar APK
+
+```bash
 flutter build apk --release
-📦 Dependencias Utilizadas
+```
+
+---
+
+# 📦 Dependencias Utilizadas
+
+```yaml
 dependencies:
   flutter:
     sdk: flutter
 
   firebase_core: ^4.0.0
   cloud_firestore: ^6.0.0
-👩‍💻 Autor
+```
 
-Odaliz Balseca
+---
+
+# 👩‍💻 Autor
+
+**Odaliz Balseca**
 
 Desarrollo de Aplicaciones Móviles
 
 Flutter + Firebase
 
-📄 Licencia
+---
+
+# 📄 Licencia
 
 Proyecto desarrollado con fines académicos para el taller de Simulación de Pasarela de Pago en Flutter.
