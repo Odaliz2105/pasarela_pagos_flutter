@@ -76,11 +76,7 @@ La aplicación presenta una lista de productos disponibles para compra.
 
 ### Captura
 
-📸 Agregar captura aquí
-
-```text
-assets/screenshots/productos.png
-```
+<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/fecb5f85-6847-4479-9a09-1312434e421b" />
 
 ---
 
@@ -90,11 +86,7 @@ Permite visualizar el producto seleccionado y el valor total a pagar antes de co
 
 ### Captura
 
-📸 Agregar captura aquí
-
-```text
-assets/screenshots/resumen.png
-```
+<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/3fdcf129-e4eb-431c-ab88-b9e7665abacf" />
 
 ---
 
@@ -125,9 +117,7 @@ El usuario debe completar los siguientes datos:
 
 📸 Agregar captura aquí
 
-```text
-assets/screenshots/pago.png
-```
+<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/dd586891-2192-4976-9769-fb06503ce7b1" />
 
 ---
 
@@ -146,11 +136,9 @@ Random().nextBool()
 
 ### Captura
 
-📸 Agregar captura aquí
+<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/31ebc2b4-415f-4f5a-904d-a4dd1eee2afb" />
 
-```text
-assets/screenshots/procesando.png
-```
+<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/b6127e82-0ac2-465d-9255-142421e258c4" />
 
 ---
 
@@ -163,21 +151,15 @@ Se muestra al usuario el estado final de la transacción.
 * Pago Aprobado
 * Pago Rechazado
 
-### Captura Aprobado
+### HISTORIAL DE PAGOS
 
-📸 Agregar captura aquí
+<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/a2f40749-cc59-4fa0-a250-7f400bc90550" />
 
-```text
-assets/screenshots/aprobado.png
-```
 
-### Captura Rechazado
+### DASHBOARD
 
-📸 Agregar captura aquí
+<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/62187da2-b56b-4a2b-aead-5efa744ad0fa" />
 
-```text
-assets/screenshots/rechazado.png
-```
 
 ---
 
